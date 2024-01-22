@@ -66,9 +66,21 @@ class _HadithLightState extends State<HadithLight> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    ToggleChapter(chaptertext: 'Volume 1', upArrowColor: Color.fromARGB(161, 138, 138, 138), downArrowColor: zmidgreenColor,),
-                    ToggleChapter(chaptertext: 'Book 1', upArrowColor: Color.fromARGB(161, 138, 138, 138), downArrowColor: zmidgreenColor,),
-                    ToggleChapter(chaptertext: 'Hadith 1', upArrowColor: Color.fromARGB(161, 138, 138, 138),  downArrowColor: zmidgreenColor,)
+                    ToggleChapter(
+                      chaptertext: 'Volume 1',
+                      upArrowColor: Color.fromARGB(161, 138, 138, 138),
+                      downArrowColor: zmidgreenColor,
+                    ),
+                    ToggleChapter(
+                      chaptertext: 'Book 1',
+                      upArrowColor: Color.fromARGB(161, 138, 138, 138),
+                      downArrowColor: zmidgreenColor,
+                    ),
+                    ToggleChapter(
+                      chaptertext: 'Hadith 1',
+                      upArrowColor: Color.fromARGB(161, 138, 138, 138),
+                      downArrowColor: zmidgreenColor,
+                    )
                   ],
                 ),
                 sizedten(context),
@@ -90,7 +102,9 @@ class _HadithLightState extends State<HadithLight> {
                                 Color.fromRGBO(113, 185, 180, 0.2)),
                         child: const Text(
                           'English',
-                          style: TextStyle(color: midgreenColor, fontWeight: FontWeight.w600),
+                          style: TextStyle(
+                              color: midgreenColor,
+                              fontWeight: FontWeight.w600),
                         )),
                     sizedwfive(context),
                     const Icon(
@@ -109,27 +123,29 @@ class _HadithLightState extends State<HadithLight> {
                 Row(
                   children: [
                     RichText(
-                      text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: 'Narrated ',
-                              style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(64, 136, 116, 1), fontFamily: GoogleFonts.montserrat().fontFamily),
-                            ),
-                            TextSpan(
-                              text: '‘Umar bin Al-Khattab',
-                              style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(0, 169, 121, 1), fontFamily: GoogleFonts.montserrat().fontFamily),
-                            )
-                          ]
+                        text: TextSpan(children: [
+                      TextSpan(
+                        text: 'Narrated ',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromRGBO(64, 136, 116, 1),
+                            fontFamily: GoogleFonts.montserrat().fontFamily),
+                      ),
+                      TextSpan(
+                        text: '‘Umar bin Al-Khattab',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromRGBO(0, 169, 121, 1),
+                            fontFamily: GoogleFonts.montserrat().fontFamily),
                       )
-                    ),
+                    ])),
                     const Spacer(),
-                    const Icon(CupertinoIcons.heart, color: zmidgreenColor,)
+                    const Icon(
+                      CupertinoIcons.heart,
+                      color: zmidgreenColor,
+                    )
                   ],
                 ),
                 sizedten(context),
@@ -147,7 +163,13 @@ class _HadithLightState extends State<HadithLight> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextButton(
-                        onPressed: () {}, child: const Text('- Previous', style: TextStyle(color: Color.fromARGB(161, 138, 138, 138), ),)),
+                        onPressed: () {},
+                        child: const Text(
+                          '- Previous',
+                          style: TextStyle(
+                            color: Color.fromARGB(161, 138, 138, 138),
+                          ),
+                        )),
                     TextButton(
                         onPressed: () {},
                         child: const Text(
@@ -182,17 +204,30 @@ class _HadithLightState extends State<HadithLight> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ReferenceWidget(width: 90, height: 132, text1: 'Reference', text2: 'In-Book', text3: 'USC-MSA web (English) reference',color: referColor,),
-
-                      ReferenceWidget(width: 130, height: 132, text1: 'Sahih al-Bukhari 1', text2: 'Book 1 , Hadith 1', text3: 'Vol. 1,\nBook 1, \nHadith 1', color: zmidgreenColor,),
+                      ReferenceWidget(
+                        width: 90,
+                        height: 132,
+                        text1: 'Reference',
+                        text2: 'In-Book',
+                        text3: 'USC-MSA web (English) reference',
+                        color: referColor,
+                      ),
+                      ReferenceWidget(
+                        width: 130,
+                        height: 132,
+                        text1: 'Sahih al-Bukhari 1',
+                        text2: 'Book 1 , Hadith 1',
+                        text3: 'Vol. 1,\nBook 1, \nHadith 1',
+                        color: zmidgreenColor,
+                      ),
                     ],
                   ),
                 ),
               ),
               Positioned(
                 bottom: 0,
-                    left: 0,
-                    right: 0,
+                left: 0,
+                right: 0,
                 child: Container(
                   height: MediaQuery.of(context).size.height / 10,
                   width: double.maxFinite,

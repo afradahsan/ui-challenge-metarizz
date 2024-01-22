@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenge_metarizz/utils/colors.dart';
 
 class ToggleChapter extends StatelessWidget {
-  const ToggleChapter({super.key, required this.chaptertext, this.upArrowColor, this.downArrowColor});
+  const ToggleChapter(
+      {super.key,
+      required this.chaptertext,
+      this.upArrowColor,
+      this.downArrowColor});
 
   final String? chaptertext;
   final Color? upArrowColor;
@@ -14,14 +18,12 @@ class ToggleChapter extends StatelessWidget {
       children: [
         Text(
           chaptertext!,
-          style: const TextStyle(color: midgreenColor, fontWeight: FontWeight.w600, fontSize: 16),
+          style: const TextStyle(
+              color: midgreenColor, fontWeight: FontWeight.w600, fontSize: 16),
         ),
-         Row(
+        Row(
           children: [
-            Icon(
-              Icons.expand_less,
-              color: upArrowColor!
-            ),
+            Icon(Icons.expand_less, color: upArrowColor!),
             Icon(
               Icons.expand_more,
               color: downArrowColor!,

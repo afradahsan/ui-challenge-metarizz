@@ -15,21 +15,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MetaRizz UI',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: primarygreen,
-        primaryColor: primarygreen,
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: primarygreen),
-          bodyMedium: TextStyle(color: primarygreen),
+        title: 'MetaRizz UI',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: primarygreen,
+          primaryColor: primarygreen,
+          textTheme: const TextTheme(
+            bodyLarge: TextStyle(color: primarygreen),
+            bodyMedium: TextStyle(color: primarygreen),
+          ),
+          iconTheme: const IconThemeData(
+            color: lightgreenColor,
+          ),
+          fontFamily: GoogleFonts.montserrat().fontFamily,
         ),
-        iconTheme: const IconThemeData(
-          color: lightgreenColor,
-        ),
-        fontFamily: GoogleFonts.montserrat().fontFamily,
-      ),
-      home: const HadithLight()
-    );
+        home: const HadithLight());
   }
 }

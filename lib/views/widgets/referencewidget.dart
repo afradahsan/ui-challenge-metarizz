@@ -3,7 +3,14 @@ import 'package:ui_challenge_metarizz/utils/colors.dart';
 import 'package:ui_challenge_metarizz/utils/constants.dart';
 
 class ReferenceWidget extends StatelessWidget {
-  const ReferenceWidget({super.key, this.width, this.height, this.text1, this.text2, this.text3, this.color});
+  const ReferenceWidget(
+      {super.key,
+      this.width,
+      this.height,
+      this.text1,
+      this.text2,
+      this.text3,
+      this.color});
 
   final double? width;
   final double? height;

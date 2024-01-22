@@ -8,8 +8,8 @@ const Color referColor = Color.fromRGBO(64, 136, 116, 1);
 const Color zlightbgColor = Color.fromRGBO(255, 255, 255, 1);
 const Color zmidgreenColor = Color.fromRGBO(0, 77, 55, 1);
 
-
-const MaterialColor primarygreen = MaterialColor(_primarygreenPrimaryValue, <int, Color>{
+const MaterialColor primarygreen =
+    MaterialColor(_primarygreenPrimaryValue, <int, Color>{
   50: Color(0xFFE0EBE8),
   100: Color(0xFFB3CDC6),
   200: Color(0xFF80ACA0),
@@ -22,7 +22,8 @@ const MaterialColor primarygreen = MaterialColor(_primarygreenPrimaryValue, <int
   900: Color(0xFF002E1C),
 });
 const int _primarygreenPrimaryValue = 0xFF005940;
-const MaterialColor primarygreenAccent = MaterialColor(_primarygreenAccentValue, <int, Color>{
+const MaterialColor primarygreenAccent =
+    MaterialColor(_primarygreenAccentValue, <int, Color>{
   100: Color(0xFF67FFB5),
   200: Color(_primarygreenAccentValue),
   400: Color(0xFF01FF84),

@@ -66,9 +66,21 @@ class _HadithPageState extends State<HadithPage> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    ToggleChapter(chaptertext: 'Volume 1', upArrowColor: Color.fromARGB(255, 86, 86, 86), downArrowColor: primarygreen,),
-                    ToggleChapter(chaptertext: 'Book 1', upArrowColor: Color.fromARGB(255, 86, 86, 86), downArrowColor: primarygreen,),
-                    ToggleChapter(chaptertext: 'Hadith 1', upArrowColor: Color.fromARGB(255, 86, 86, 86), downArrowColor: primarygreen,)
+                    ToggleChapter(
+                      chaptertext: 'Volume 1',
+                      upArrowColor: Color.fromARGB(255, 86, 86, 86),
+                      downArrowColor: primarygreen,
+                    ),
+                    ToggleChapter(
+                      chaptertext: 'Book 1',
+                      upArrowColor: Color.fromARGB(255, 86, 86, 86),
+                      downArrowColor: primarygreen,
+                    ),
+                    ToggleChapter(
+                      chaptertext: 'Hadith 1',
+                      upArrowColor: Color.fromARGB(255, 86, 86, 86),
+                      downArrowColor: primarygreen,
+                    )
                   ],
                 ),
                 sizedten(context),
@@ -88,7 +100,9 @@ class _HadithPageState extends State<HadithPage> {
                                 const Color.fromRGBO(156, 198, 194, 0.2)),
                         child: const Text(
                           'English',
-                          style: TextStyle(color: midgreenColor, fontWeight: FontWeight.w600),
+                          style: TextStyle(
+                              color: midgreenColor,
+                              fontWeight: FontWeight.w600),
                         )),
                     sizedwfive(context),
                     const Icon(
@@ -106,25 +120,24 @@ class _HadithPageState extends State<HadithPage> {
                 Row(
                   children: [
                     RichText(
-                      text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: 'Narrated ',
-                              style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(64, 136, 116, 1), fontFamily: GoogleFonts.montserrat().fontFamily),
-                            ),
-                            TextSpan(
-                              text: '‘Umar bin Al-Khattab',
-                              style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: const Color.fromRGBO(0, 169, 121, 1), fontFamily: GoogleFonts.montserrat().fontFamily),
-                            )
-                          ]
+                        text: TextSpan(children: [
+                      TextSpan(
+                        text: 'Narrated ',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromRGBO(64, 136, 116, 1),
+                            fontFamily: GoogleFonts.montserrat().fontFamily),
+                      ),
+                      TextSpan(
+                        text: '‘Umar bin Al-Khattab',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromRGBO(0, 169, 121, 1),
+                            fontFamily: GoogleFonts.montserrat().fontFamily),
                       )
-                    ),
+                    ])),
                     const Spacer(),
                     const Icon(CupertinoIcons.heart)
                   ],
@@ -179,16 +192,30 @@ class _HadithPageState extends State<HadithPage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ReferenceWidget(width: 90, height: 132, text1: 'Reference', text2: 'In-Book', text3: 'USC-MSA web (English) reference',color: referColor,),
-                      ReferenceWidget(width: 130, height: 132, text1: 'Sahih al-Bukhari 1', text2: 'Book 1 , Hadith 1', text3: 'Vol. 1,\nBook 1, \nHadith 1', color: lightgreenColor,),
+                      ReferenceWidget(
+                        width: 90,
+                        height: 132,
+                        text1: 'Reference',
+                        text2: 'In-Book',
+                        text3: 'USC-MSA web (English) reference',
+                        color: referColor,
+                      ),
+                      ReferenceWidget(
+                        width: 130,
+                        height: 132,
+                        text1: 'Sahih al-Bukhari 1',
+                        text2: 'Book 1 , Hadith 1',
+                        text3: 'Vol. 1,\nBook 1, \nHadith 1',
+                        color: lightgreenColor,
+                      ),
                     ],
                   ),
                 ),
               ),
               Positioned(
                 bottom: 0,
-                    left: 0,
-                    right: 0,
+                left: 0,
+                right: 0,
                 child: Container(
                   height: MediaQuery.of(context).size.height / 10,
                   width: double.maxFinite,
